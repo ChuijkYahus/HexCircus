@@ -51,7 +51,7 @@ public class OpLinearParticle implements ConstMediaAction {
         Vec3d b = OperatorUtils.getVec3(args, 1, getArgc());
         ctx.assertVecInRange(b);
         Vec3d color = OperatorUtils.getVec3(args, 2, getArgc());
-        Double speed = OperatorUtils.getDoubleBetween(args, 3, 0.1, 5, getArgc());
+        Double speed = OperatorUtils.getDoubleBetween(args, 3, 0.1, 20, getArgc());
 
         // Send to all players
         ArrayList<ServerPlayerEntity> players = new ArrayList<>();
